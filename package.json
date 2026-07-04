@@ -1,0 +1,12 @@
+{
+  "name": "bdeliver-app",
+  "version": "1.0.0",
+  "description": "BDeliver - Food Delivery App",
+  "scripts": {
+    "start": "node backend/server.js",
+    "build": "npm install --prefix backend && npm install --prefix frontend --legacy-peer-deps && npm run build --prefix frontend"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
