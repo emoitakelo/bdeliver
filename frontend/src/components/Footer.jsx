@@ -11,7 +11,7 @@ const Footer = () => {
           </Link>
           <div className="flex gap-4">
             <button className="border border-gray-400 rounded-lg px-4 py-2 flex items-center gap-2 bg-white hover:bg-gray-50 transition-colors">
-              <span className="text-gray-700 font-medium">India</span>
+              <span className="text-gray-700 font-medium">Kenya</span>
               <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             <button className="border border-gray-400 rounded-lg px-4 py-2 flex items-center gap-2 bg-white hover:bg-gray-50 transition-colors">
@@ -36,13 +36,22 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-bold tracking-widest text-gray-900 mb-4 uppercase text-sm">BDeliver Network</h4>
+            <h4 className="font-bold tracking-widest text-gray-900 mb-4 uppercase text-sm">Contact Info</h4>
             <ul className="space-y-3">
-              <li><Link to="#" className="text-gray-500 hover:text-gray-900 transition-colors text-sm">BDeliver</Link></li>
-              <li><Link to="#" className="text-gray-500 hover:text-gray-900 transition-colors text-sm">Blinkit</Link></li>
-              <li><Link to="#" className="text-gray-500 hover:text-gray-900 transition-colors text-sm">Feeding India</Link></li>
-              <li><Link to="#" className="text-gray-500 hover:text-gray-900 transition-colors text-sm">Hyperpure</Link></li>
-              <li><Link to="#" className="text-gray-500 hover:text-gray-900 transition-colors text-sm">Zomaland</Link></li>
+              <li className="text-gray-500 text-sm">
+                <strong>Address:</strong><br />
+                The Mirage, Tower 1, 8th Floor<br />
+                Waiyaki Way, Westlands<br />
+                Nairobi, Kenya
+              </li>
+              <li className="text-gray-500 text-sm">
+                <strong>Phone:</strong><br />
+                +254 700 000 000
+              </li>
+              <li className="text-gray-500 text-sm">
+                <strong>Email:</strong><br />
+                hello@bdeliver.co.ke
+              </li>
             </ul>
           </div>
 

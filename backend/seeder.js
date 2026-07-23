@@ -28,51 +28,51 @@ const importData = async () => {
     const restaurants = [
       {
         user: adminUser._id,
-        name: 'The Rustic Kitchen',
-        image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80',
-        address: '123 Downtown St',
-        location: 'Downtown',
-        cuisines: ['Italian', 'Continental'],
-        costForTwo: 60,
-        rating: 4.5,
-        numReviews: 120,
+        name: 'Nyama Mama',
+        image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80',
+        address: 'Delta Towers, Westlands',
+        location: 'Westlands',
+        cuisines: ['Kenyan', 'African'],
+        costForTwo: 3000,
+        rating: 4.6,
+        numReviews: 245,
         featured: true,
         imageGallery: [
-          'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80'
+          'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1544025162-831627473070?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80'
         ]
       },
       {
         user: adminUser._id,
-        name: 'Spicy Symphony',
-        image: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80',
-        address: '456 Uptown Blvd',
-        location: 'Uptown',
-        cuisines: ['Indian', 'Chinese'],
-        costForTwo: 40,
-        rating: 4.2,
-        numReviews: 85,
+        name: 'Kosewe Ranalo Foods',
+        image: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80',
+        address: 'Kimathi Street, CBD',
+        location: 'Nairobi CBD',
+        cuisines: ['Traditional', 'Kenyan'],
+        costForTwo: 1500,
+        rating: 4.3,
+        numReviews: 180,
         featured: false,
         imageGallery: [
-          'https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80'
+          'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1574484284002-952d92456975?auto=format&fit=crop&w=800&q=80'
         ]
       },
       {
         user: adminUser._id,
-        name: 'Burger & Co',
-        image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80',
-        address: '789 Suburbia Lane',
-        location: 'Suburbia',
-        cuisines: ['Fast Food', 'American'],
-        costForTwo: 25,
-        rating: 4.8,
-        numReviews: 320,
+        name: 'Artcaffe Coffee & Bakery',
+        image: 'https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80',
+        address: 'Yaya Centre, Kilimani',
+        location: 'Kilimani',
+        cuisines: ['Cafe', 'Bakery', 'Continental'],
+        costForTwo: 2000,
+        rating: 4.7,
+        numReviews: 410,
         featured: true,
         imageGallery: [
-          'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80'
+          'https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80'
         ]
       }
     ];
@@ -81,44 +81,62 @@ const importData = async () => {
 
     // 3. Mock Menu Items
     const menuItems = [
-      // For The Rustic Kitchen
+      // For Nyama Mama
       {
         restaurant: createdRestaurants[0]._id,
-        name: 'Margherita Pizza',
-        description: 'Classic cheese and tomato pizza',
-        price: 15,
-        image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80',
+        name: 'Nyama Choma Platter',
+        description: 'Assorted grilled meats served with kachumbari',
+        price: 1800,
+        image: 'https://images.unsplash.com/photo-1544025162-831627473070?auto=format&fit=crop&w=800&q=80',
         category: 'Mains',
-        isVegetarian: true
+        isVegetarian: false
       },
       {
         restaurant: createdRestaurants[0]._id,
-        name: 'Garlic Bread',
-        description: 'Toasted bread with garlic butter',
-        price: 6,
-        image: 'https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?auto=format&fit=crop&w=800&q=80',
-        category: 'Starters',
+        name: 'Ugali & Sukuma Wiki',
+        description: 'Staple maize meal served with collard greens',
+        price: 400,
+        image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80',
+        category: 'Sides',
         isVegetarian: true
       },
-      // For Spicy Symphony
+      // For Kosewe Ranalo Foods
       {
         restaurant: createdRestaurants[1]._id,
-        name: 'Chicken Tikka Masala',
-        description: 'Creamy and spicy chicken curry',
-        price: 18,
+        name: 'Whole Tilapia Fish',
+        description: 'Deep fried or wet fry tilapia from Lake Victoria',
+        price: 1200,
+        image: 'https://images.unsplash.com/photo-1574484284002-952d92456975?auto=format&fit=crop&w=800&q=80',
+        category: 'Mains',
+        isVegetarian: false
+      },
+      {
+        restaurant: createdRestaurants[1]._id,
+        name: 'Matoke & Beef Stew',
+        description: 'Plantain stewed with tender beef chunks',
+        price: 850,
         image: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80',
         category: 'Mains',
         isVegetarian: false
       },
-      // For Burger & Co
+      // For Artcaffe
       {
         restaurant: createdRestaurants[2]._id,
-        name: 'Classic Cheeseburger',
-        description: 'Beef patty, cheese, lettuce, tomato',
-        price: 12,
-        image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80',
-        category: 'Mains',
-        isVegetarian: false
+        name: 'Almond Croissant',
+        description: 'Freshly baked flaky pastry with almond filling',
+        price: 350,
+        image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80',
+        category: 'Bakery',
+        isVegetarian: true
+      },
+      {
+        restaurant: createdRestaurants[2]._id,
+        name: 'Kenyan House Blend Coffee',
+        description: 'Rich, aromatic medium roast coffee',
+        price: 300,
+        image: 'https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80',
+        category: 'Beverages',
+        isVegetarian: true
       }
     ];
 
