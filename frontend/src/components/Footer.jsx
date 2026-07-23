@@ -52,10 +52,6 @@ const Footer = () => {
                 <strong>General Email / Support:</strong><br />
                 akellolouis@gmail.com
               </li>
-              <li className="text-gray-500 text-sm">
-                <strong>Disputes:</strong><br />
-                emoitakelo@gmail.com
-              </li>
             </ul>
           </div>
 
