@@ -39,18 +39,22 @@ const Footer = () => {
             <h4 className="font-bold tracking-widest text-gray-900 mb-4 uppercase text-sm">Contact Info</h4>
             <ul className="space-y-3">
               <li className="text-gray-500 text-sm">
-                <strong>Address:</strong><br />
-                The Mirage, Tower 1, 8th Floor<br />
-                Waiyaki Way, Westlands<br />
-                Nairobi, Kenya
+                <strong>Office Address:</strong><br />
+                1125<br />
+                Eldoret, 30100, Uasin Gishu District<br />
+                Kenya
               </li>
               <li className="text-gray-500 text-sm">
-                <strong>Phone:</strong><br />
-                +254 700 000 000
+                <strong>Phone Number:</strong><br />
+                +254 745 676 267
               </li>
               <li className="text-gray-500 text-sm">
-                <strong>Email:</strong><br />
-                hello@bdeliver.co.ke
+                <strong>General Email / Support:</strong><br />
+                akellolouis@gmail.com
+              </li>
+              <li className="text-gray-500 text-sm">
+                <strong>Disputes:</strong><br />
+                emoitakelo@gmail.com
               </li>
             </ul>
           </div>
